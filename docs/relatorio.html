@@ -192,5 +192,5 @@ FROM temperature_readings GROUP BY 1, 2 ORDER BY data, ambiente;</pre>
 
 <h2>13. Conclusão</h2>
 <p>O projeto mostrou na prática as etapas de um pipeline de dados IoT: ingestão de uma fonte externa, tratamento e validação, armazenamento num banco em contêiner, modelagem de consultas com views e visualização interativa. Analisar o schema real antes de codificar foi decisivo, porque o dataset não tinha a coluna <code>device_id</code> do exemplo e o formato de data exigia conversão explícita. Os dados também revelaram problemas típicos de IoT, como coleta irregular e possível inconsistência de fuso horário, que reforçam a importância da qualidade de dados e do monitoramento dos próprios sensores. O uso de Docker e de um README detalhado torna o trabalho reproduzível por qualquer pessoa.</p>
-<p><b>Repositório:</b> [LINK DO GITHUB] · <b>Vídeo:</b> [LINK DO VÍDEO]</p>
+<p><b>Repositório:</b> <a href="https://github.com/Arno00000/pipeline-dados-iot">github.com/Arno00000/pipeline-dados-iot</a> · <b>Vídeo:</b> [LINK DO VÍDEO]</p>
 </body></html>

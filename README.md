@@ -79,7 +79,7 @@ pipeline-iot/
 Pré-requisitos: **Python 3.11+**, **Git** e **Docker Desktop** (com o Docker em execução).
 
 ```bash
-git clone https://github.com/SEU_USUARIO/pipeline-dados-iot.git
+git clone https://github.com/Arno00000/pipeline-dados-iot.git
 cd pipeline-dados-iot
 ```
 
@@ -212,7 +212,7 @@ git init
 git add .
 git commit -m "Projeto inicial: Pipeline de Dados IoT"
 git branch -M main
-git remote add origin https://github.com/SEU_USUARIO/pipeline-dados-iot.git
+git remote add origin https://github.com/Arno00000/pipeline-dados-iot.git
 git push -u origin main
 git pull
 ```
