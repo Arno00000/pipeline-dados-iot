@@ -219,5 +219,6 @@ git pull
 
 ## Autor
 
-**Nome:** _seu nome aqui_
+**Nome:** André Vitor de Oliveira Cirino (RA: 119010)  
+**Professor:** Felipe Bonatto  
 **Disciplina:** Disruptive Architectures: IoT, Big Data e IA

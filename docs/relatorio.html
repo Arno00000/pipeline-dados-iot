@@ -1,33 +1,56 @@
 <!doctype html>
 <html lang="pt-BR"><head><meta charset="utf-8"><title>Pipeline de Dados com IoT e Docker</title>
 <style>
-@page { size: A4; margin: 22mm 20mm; }
-body { font-family: "DejaVu Sans", Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color: #1f2937; }
-h1 { font-size: 17pt; margin: 0 0 8px; color: #111827; }
-h2 { font-size: 13.5pt; color: #1d4ed8; border-bottom: 1px solid #cbd5e1; padding-bottom: 3px; margin-top: 22px; }
+@page { size: A4; }
+body { font-family: "Times New Roman", "Liberation Serif", Times, serif; font-size: 12pt; line-height: 1.5; color: #000; text-align: justify; }
+h2 { font-size: 16pt; text-align: center; margin: 24px 0 12px; }
+h3 { font-size: 13pt; margin: 16px 0 6px; }
 h2, h3 { page-break-after: avoid; }
 pre, table { page-break-inside: avoid; }
-h3 { font-size: 11pt; margin: 14px 0 4px; }
-table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 9.5pt; }
-th, td { border: 1px solid #cbd5e1; padding: 4px 7px; text-align: left; }
-th { background: #eff6ff; }
-code, pre { font-family: "DejaVu Sans Mono", monospace; font-size: 8.8pt; }
-pre { background: #f1f5f9; padding: 8px 10px; border-radius: 4px; white-space: pre-wrap; }
-img { width: 100%; border: 1px solid #e5e7eb; margin: 6px 0 2px; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 10.5pt; text-align: left; }
+th, td { border: 1px solid #555; padding: 4px 7px; }
+th { background: #e5e7eb; }
+code, pre { font-family: "DejaVu Sans Mono", monospace; font-size: 9pt; }
+pre { background: #f3f4f6; padding: 8px 10px; white-space: pre-wrap; text-align: left; }
+img { width: 100%; border: 1px solid #ccc; margin: 6px 0 2px; }
 img.half { width: 70%; }
-.fig { font-size: 9pt; color: #64748b; text-align: center; margin-bottom: 10px; }
-.cover { height: 250mm; display: flex; flex-direction: column; justify-content: space-between; text-align: center; page-break-after: always; }
-.cover .t { font-size: 24pt; font-weight: bold; color: #111827; margin-top: 70mm; }
-.cover .s { font-size: 13pt; color: #475569; }
+.fig { font-size: 10pt; text-align: center; margin-bottom: 12px; font-style: italic; }
+.cover { height: 225mm; display: flex; flex-direction: column; justify-content: space-between; text-align: center; page-break-after: always; }
+.cover p { margin: 4px 0; }
+.cover .t { font-size: 14pt; font-weight: bold; }
+.toc { page-break-after: always; text-align: left; }
+.toc ol { line-height: 1.9; }
 .br { page-break-before: always; }
 .avoid { page-break-inside: avoid; }
 </style></head><body>
 
 <div class="cover">
-  <div class="s">[NOME DA INSTITUIÇÃO]<br>Disruptive Architectures: IoT, Big Data e IA</div>
-  <div><div class="t">Pipeline de Dados com IoT e Docker</div>
-  <p class="s">Ingestão, armazenamento e visualização de leituras reais de sensores de temperatura</p></div>
-  <div class="s">Aluno: [SEU NOME]<br>Professor: [NOME DO PROFESSOR]<br>2026</div>
+  <div>
+    <p>Disciplina: Disruptive Architectures: IoT, Big Data e IA</p>
+    <p>Professor: Felipe Bonatto</p>
+  </div>
+  <div>
+    <p class="t">Pipeline de Dados com IoT e Docker</p>
+    <p>Ingestão, armazenamento e visualização de leituras reais de sensores de temperatura</p>
+  </div>
+  <div>
+    <p>Aluno: André Vitor de Oliveira Cirino (RA: 119010)</p>
+  </div>
+  <div>
+    <p>Outubro de 2026</p>
+    <p>São Paulo - SP</p>
+    <p>2026</p>
+  </div>
+</div>
+
+<div class="toc">
+<h2>Índice</h2>
+<ol>
+<li>Contextualização</li><li>Objetivos</li><li>Tecnologias Utilizadas</li><li>Arquitetura do Projeto</li>
+<li>Configuração do Ambiente</li><li>Dataset</li><li>Processamento</li><li>PostgreSQL</li>
+<li>Views SQL<br>&nbsp;&nbsp;9.1 temperatura_media_ambiente<br>&nbsp;&nbsp;9.2 leituras_por_hora<br>&nbsp;&nbsp;9.3 temperatura_por_dia</li>
+<li>Dashboard</li><li>Insights</li><li>Aplicação Prática</li><li>Conclusão</li>
+</ol>
 </div>
 
 <h2>1. Contextualização</h2>
