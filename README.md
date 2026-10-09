@@ -66,7 +66,7 @@ pipeline-iot/
 │   └── dashboard.py         # dashboard Streamlit
 ├── sql/views.sql            # as 3 views comentadas
 ├── screenshots/             # prints do dashboard
-├── docs/                    # relatório em PDF e roteiro do vídeo
+├── docs/                    # relatório em PDF
 ├── .streamlit/config.toml   # tema e configuração do Streamlit
 ├── docker-compose.yml       # PostgreSQL 16
 ├── requirements.txt         # dependências Python
